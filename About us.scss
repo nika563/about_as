@@ -1,0 +1,820 @@
+@font-face {
+	font-family: 'Open_Sans';
+	font-display: swap;
+	src: url("style/Open_Sans/OpenSans-Light.ttf");
+	src: local("O"), url("style/Open_Sans/OpenSans-Light.ttf") format("truetype"), 
+			url("style/Open_Sans/OpenSans-Light.ttf") format("truetype");
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Raleway';
+	font-display: swap;
+	src: url("style/Raleway/static/Raleway-Light.ttf");
+	src: local("O"), url("style/Raleway/static/Raleway-Light.ttf") format("truetype"), 
+			url("style/Raleway/static/Raleway-Light.ttf") format("truetype");
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Poiret_One';
+	font-display: swap;
+	src: url("style/Poiret_One/PoiretOne-Regular.ttf");
+	src: local("O"), url("style/Poiret_One/PoiretOne-Regular.ttf") format("truetype"), 
+			url("style/Poiret_One/PoiretOne-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Comfortaa';
+	font-display: swap;
+	src: url("style/Comfortaa/Comfortaa-VariableFont_wght.ttf");
+	src: local("O"), url("style/Comfortaa/Comfortaa-VariableFont_wght.ttf") format("truetype"), 
+			url("style/Comfortaa/Comfortaa-VariableFont_wght.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+  font-family: 'Amatic_SC';
+  font-display: swap;
+  src: url("style/Amatic_SC/AmaticSC-Bold.ttf");
+  src: local("O"), url("style/Amatic_SC/AmaticSC-Bold.ttf") format("truetype"), 
+      url("style/Amatic_SC/AmaticSC-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat_Alternates';
+  font-display: swap;
+  src: url("style/Montserrat_Alternates/MontserratAlternates-Light.ttf");
+  src: local("O"), url("style/Montserrat_Alternates/MontserratAlternates-Light.ttf") format("truetype"), 
+      url("style/Montserrat_Alternates/MontserratAlternates-Light.ttf") format("truetype");
+  font-weight: 1000;
+  font-style: normal;
+}
+
+
+
+
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.menu{
+  background: #F39C12;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
+.menu a{
+  text-decoration: none;
+}
+.menu nav{
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .content{
+  display: flex;
+}
+nav .content .links{
+  margin-left: 80px;
+  display: flex;
+}
+.logph{
+    width: 70px;
+    height: 50px;
+    margin-left: 350px;
+    margin-top: 10px;
+}
+.content .links li{
+  list-style: none;
+  line-height: 70px;
+}
+.content .links li a,
+.content .links li label{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 9px 17px;
+  border-radius: 5px;
+  font-family: "Comfortaa";
+  transition: all 0.3s ease;
+}
+.content .links li label{
+  display: none;
+}
+.content .links .hover:hover{
+    text-decoration: line-through;
+    transition: 10s ease-in-out;
+}
+.hover_1{
+  text-decoration: line-through;
+}
+.menu .menu-icon{
+  display: none;
+}
+.menu input[type="checkbox"]{
+  display: none;
+}
+.content .links ul{
+  position: absolute;
+  background: #f39c12;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+}
+.content .links li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+.content .links ul li a{
+  display: block;
+  width: 100%;
+  line-height: 30px;
+  border-radius: 0px !important;
+}
+.content .links ul li a:hover{
+  color: rgb(233, 30, 99);
+  background-color: white;
+}
+/* fini menu*/
+
+header{
+  .video_1{
+    margin-left: 0px;
+    margin-top: 70px;
+    position: absolute;
+    
+    video{
+      height: 949px;
+      z-index: 0;
+    }
+  }
+/*p*/
+.p{
+  position: absolute;
+  z-index: 1;
+  .p_1{
+    color: white;
+    font-size: 50px;
+    font-family: "Comfortaa";
+    margin-top: 300px;
+    margin-left: 120px;
+  }
+  .p_2{
+    color: white;
+    font-size: 50px;
+    font-family: "Comfortaa";
+    margin-top: 20px;
+    margin-left: 220px;
+  }
+  .p_3{
+    margin-top: 20px;
+    color: white;
+    font-size: 50px;
+    font-family: "Comfortaa";
+    margin-left: 150px;
+  }
+  .p_4{
+    margin-top: 20px;
+    margin-left: 150px;
+    color: white;
+    font-size: 50px;
+    font-family: "Comfortaa";
+  }
+}
+/*second video*/
+  .video{
+    display: none;
+    .click-for-video{
+      img{}
+    }
+    .youtube{
+      video{}
+    }
+  }
+}
+
+
+main{
+  .first_block{
+    position: absolute;
+    .yellow{
+        position: absolute;
+        width: 1700px;
+        height: 132px;
+        margin-left: -30px;
+        margin-top: 820px;
+        background-color: #F2FFB0;
+        z-index: 1;
+    }
+    .p_text{
+      width: 1730px;
+      margin-top: 875px;
+      margin-left: -30px;
+      padding-bottom: 40px;
+      z-index: 2;
+      background-color: #F2FFB0;
+      position: absolute;
+      text-align: center;
+      transform: rotate(-3.66deg);
+      box-shadow: 0 14px 28px rgba(0, 0 , 0 ,75);
+/*тут_ошибка*/
+    p{
+       font-family: "Poiret_One";
+        animation: animate 3s liner infinite;
+        background: liner-gradient(90deg,#F2FFB0,#000,#F2FFB0);
+        background-repeat: no-repeat;
+        font-size: 50px;
+    }
+    @keyframes animate{
+      0%{
+        background-position-x: -100%;
+      }
+      100%{
+        background-position-x: 100%;
+      }
+    }
+  }
+}
+/*info_about_people*/
+  .second_block{
+    .img_for_two_blocks{
+      .img_1{
+        position: absolute;
+        z-index: 4;
+        img{
+          width: 100px;
+          height: 100%;
+          object-fit: cover;
+          margin-top: 910px;
+          margin-left: -50px;
+        }
+      }
+      .img_2{
+        position: absolute;
+        margin-top: 850px;
+        z-index: 4;
+        margin-left: 1050px;
+        img{
+          width: 130px;
+        }
+      }
+      .img_3{
+         position: absolute;
+         z-index: 5;
+         margin-top: 1200px;
+         margin-left: -20px;
+        img{
+          width: 130px;
+        }
+      }
+      .img_4{
+         position: absolute;
+         z-index: 5;
+         margin-top: 1500px;
+         margin-left: 100px;
+        img{
+          width: 130px;
+        }
+      }
+      .img_5{
+         position: absolute;
+         z-index: 4;
+         margin-left: 1590px;
+         margin-top: 1300px;
+        img{
+          width: 140px;
+        }
+      }
+      .img_6{
+         position: absolute;
+         z-index: 4;
+         margin-left: 1530px;
+         margin-top: 1450px;
+        img{
+          width: 130px;
+        }
+      }
+    }
+    .feol{
+      position: absolute;
+      background-color: #E7A3FF;
+      transform: rotate(-3.66deg);
+      margin-top: 972px;
+      margin-left: -30px;
+      width: 1730px;
+      height: 100px;
+      z-index: 3;
+    }
+
+    .info_block{
+      background-color: #E7A3FF;
+      width: 1700px;
+      height: 1900px;
+      margin-top: 1000px;
+      position: absolute;
+/*first start*/
+      .first{
+        position: absolute;
+        .img_1{
+          border-radius: 306.5px;
+          width: 345px;
+          height: 347px;
+          margin-top: 100px;
+          margin-left: 150px;
+          position: absolute;
+          z-index: 4;
+          box-shadow: 0 14px 28px rgba(0,0,0,0.75);
+        }
+        .img_2{
+          position: absolute;
+          z-index: 5;
+          height: 100px;
+          margin-left: 390px;
+          margin-top: 70px;
+        }
+        .name_first{
+          background-color: #FF8C7D;
+          border-radius: 100%;
+          width: 80px;
+          height:80px;
+          z-index: 4;
+          position: absolute;
+          margin-top: 370px;
+          margin-left: 150px;
+          transition: width 1s;
+          p{
+            color: white;
+            text-align: center;
+            padding-top: 15px;
+            font-size: 40px;
+            font-family: "Amatic_SC";
+          }
+        }
+        .name_first:hover{
+            transition: all 500ms ease-in-out;
+            width: 330px;
+            border-radius: 20px;
+        }
+        .name_first:hover p:after{
+          content: "Ирина Бараненко";
+          font-family: "Amatic_SC";
+        }
+        .name_first:hover p span{
+          display: none;
+        }
+      }
+/*first end*/
+/*second_start*/
+      .second{
+        position: absolute;
+        .img_1{
+          margin-top: 100px;
+          margin-left: 720px;
+          border-radius: 100%;
+          width: 345px;
+          height: 347px;
+          box-shadow: 0 14px 28px rgba(0,0,0,0.75);
+          z-index: 4;
+          }
+        .img_2{
+           margin-left: -90px;
+           z-index: 5;
+           height: 100px;
+           margin-top: 70px;
+           position: absolute;
+        }
+        .name_second{
+            background-color: #FFAC59;
+            border-radius: 100%;
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            margin-top: -82px;
+            margin-left: 720px;
+            z-index: 5;
+            transition: width 1s;
+          p{
+            color: white;
+            text-align: center;
+            padding-top: 15px;
+            font-size: 40px;
+            font-family: "Amatic_SC";
+          }
+        }
+        .name_second:hover{
+          width: 340px;
+          border-radius: 20px;
+          transition: width 300ms;
+        }
+        .name_second:hover p span{
+          display: none;
+        }
+        .name_second:hover p:after{
+          content: "Анна Верещак (этот обонент не в зоне действия этой вселенной)";
+        }
+      }
+/*second_end*/
+/*third_start*/
+     .third{
+        position: absolute;
+        z-index: 4;
+        .img_1{
+          border-radius: 100%;
+          width: 345px;
+          height: 347px;
+          margin-top: 100px;
+          margin-left: 1250px;
+          position: absolute;
+          box-shadow: 0 14px 28px rgba(0,0,0,0.75);
+        }
+        .img_2{
+          position: absolute;
+          z-index: 5;
+          height: 100px;
+          margin-left: 1510px;
+          margin-top: 70px;
+          border-radius: 100%;
+        }
+        .name_third{
+          position: absolute;
+          background-color: #D7EB00;
+          transition: width 1s;
+          border-radius: 100%;
+          width: 80px;
+          height: 80px;
+          z-index: 4;
+          margin-left: 1260px;
+          margin-top: 370px;
+          transition: width 1s;
+          p{
+            color: white;
+            text-align: center;
+            padding-top: 15px;
+            font-size: 40px;
+            font-family: "Amatic_SC";
+          }
+        }
+        .name_third:hover{
+          width: 340px;
+          border-radius: 20px;
+          transition: width 300ms;
+        }
+        .name_third:hover p span{
+          display: none;
+        }
+        .name_third:hover p:after{
+          content: "Юлия Фитуни";
+        }
+      }
+/*third_end*/
+/*fourth_start*/
+     .fourth{
+        position: absolute;
+        .img_1{
+          border-radius: 100%;
+          width: 345px;
+          height: 347px;
+          z-index: 4;
+          box-shadow: 0 14px 28px rgba(0,0,0,0.75);
+          margin-top: 560px;
+          margin-left: 150px;
+        }
+        .img_2{
+          position: absolute;
+          z-index: 5;
+          height: 100px;
+          margin-left: -110px;
+          margin-top: 520px;
+        }
+        .name_fourth{
+          position: absolute;
+          z-index: 5;
+          background-color: #7CFF37;
+          border-radius: 100%;
+          width: 80px;
+          height: 80px;
+          transition: width 1s;
+          margin-top: -80px;
+          margin-left: 150px;
+          p{
+            color: white;
+            text-align: center;
+            padding-top: 15px;
+            font-size: 40px;
+            font-family: "Amatic_SC";
+          }
+        }
+        .name_fourth:hover{
+            width: 340px;
+            border-radius: 20px;
+            transition: width 500ms;
+        }
+        .name_fourth:hover p span{
+          display: none;
+        }
+        .name_fourth:hover p:after{
+          content: "Варвара Тертычная";
+        }
+      }
+/*fourth_end*/
+/*fifth_start*/
+     .fifth{
+        position: absolute;
+        margin-top: 100px;
+        .img_1{ 
+          border-radius: 100%;
+          width: 345px;
+          height: 347px;
+          z-index: 4;
+          box-shadow: 0 14px 28px rgba(0,0,0,0.75);
+          margin-top: 460px;
+          margin-left: 720px;
+        }
+        .img_2{
+          position: absolute;
+          z-index: 5;
+          margin-top: 450px;
+          margin-left: -80px;
+          height: 100px;
+        }
+        .name_fifth{
+          z-index:5;
+          border-radius: 100%;
+          width: 80px;
+          height: 80px;
+          transition: width 1s;
+          background-color: #5EA7FF;
+          margin-top: -80px;
+          margin-left: 710px;
+          position: absolute;
+          p{
+            color: white;
+            text-align: center;
+            padding-top: 15px;
+            font-size: 40px;
+            font-family: "Amatic_SC";
+          }
+        }
+        .name_fifth:hover{
+          width: 340px;
+          border-radius: 20px;
+          transition: width 500ms;
+        }
+        .name_fifth:hover p span{
+          display: none;
+        }
+        .name_fifth:hover p:after{
+          content: "Юля Таранцова";
+        }
+      }
+/*fifth_end*/
+/*sixth_start*/
+     .sixth{
+         position: absolute;
+        .img_1{
+          position: absolute;
+          border-radius: 100%;
+          width: 345px;
+          height: 347px;
+          z-index: 4;
+          box-shadow: 0 14px 28px rgb(0,0,0,0.75);
+          margin-top: 560px;
+          margin-left: 1250px;
+        }
+        .img_2{
+          position: absolute;
+          z-index: 5;
+          height: 100px;
+          margin-top: 530px;
+          margin-left: 1500px;
+        }
+        .name_sixth{
+          position: absolute;
+          background-color: #5E63FF;
+          border-radius: 100%;
+          width: 80px;
+          height: 80px;
+          margin-top: 830px;
+          margin-left: 1250px;
+          z-index: 5;
+          transition: width 1s;
+          p{
+            color: white;
+            text-align: center;
+            padding-top: 15px;
+            font-size: 40px;
+            font-family: "Amatic_SC";
+          }
+        }
+        .name_sixth:hover{
+          width: 340px;
+          border-radius: 20px;
+          transition: width 500ms;
+        }
+        .name_sixth:hover p span{
+          display: none;
+        }
+        .name_sixth:hover p:after{
+          content: "Надежда Демидова";
+        }
+      }
+/*sixth_end*/
+/*seventh_start*/
+     .seventh{
+        .img_1{
+          position: absolute;
+          border-radius: 100%;
+          width: 345px;
+          height: 347px;
+          z-index: 4;
+          box-shadow: 0 14px 28px rgb(0,0,0,0.75);
+          margin-top: 1000px;
+          margin-left: 410px;
+        }
+        .img_2{
+            position: absolute;
+            z-index: 5;
+            height: 100px;
+            margin-top: 980px;
+            margin-left: 670px;
+        }
+        .name_seventh{
+          position: absolute;
+          background-color: #AA00FF;
+          border-radius: 100%;
+          width: 80px;
+          height: 80px;
+          margin-top: 1270px;
+          margin-left: 400px;
+          z-index: 5;
+          p{
+            color: white;
+            text-align: center;
+            padding-top: 15px;
+            font-size: 40px;
+            font-family: "Amatic_SC";
+          }
+        }
+        .name_seventh:hover{
+          width: 340px;
+          border-radius: 20px;
+          transition: width 500ms;
+        }
+        .name_seventh:hover p span{
+          display: none;
+        }
+        .name_seventh:hover p:after{
+          content: "Маша Новокщенова";
+        }
+      }
+/*seventh_end*/
+/*eighth_start*/
+     .eighth{
+        .img_1{
+          position: absolute;
+          border-radius: 100%;
+          width: 345px;
+          height: 347px;
+          z-index: 4;
+          box-shadow: 0 14px 28px rgb(0,0,0.75%);
+          margin-top: 1000px;
+          margin-left: 970px;
+        }
+        .img_2{
+          position: absolute;
+          z-index: 5;
+          height: 100px;
+          margin-top: 980px;
+          margin-left: 1230px;
+        }
+        .name_eighth{
+          margin-top: 1270px;
+          margin-left: 965px;
+          z-index: 5;
+          position: absolute;
+          background: rgb(63,94,251);
+          background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+          border-radius: 100%;
+          width: 80px;
+          height: 80px;
+          p{
+            color: white;
+            text-align: center;
+            padding-top: 15px;
+            font-size: 40px;
+            font-family: "Amatic_SC";
+          }
+        }
+        .name_eighth:hover{
+          width: 340px;
+          border-radius: 20px;
+          transition: width 500ms;
+        }
+        .name_eighth:hover p span{
+          display: none;
+        }
+        .name_eighth:hover p:after{
+          content: "Анастасия Кистенева (этот обонент не в зоне действия галактики, перейдите на другую галактику)";
+        }
+      }
+/*eighth_end*/
+    }
+  }
+}
+
+/*block_with_animate*/
+main{
+  .animation_with_frog{
+    position: absolute;
+    .anim_text{
+      #toggle{
+      position: absolute;
+      background-color: white;
+      color: black;
+      font-size: 30px;
+      border-radius: 10px;
+      z-index: 5;
+      font-family: "Montserrat_Alternates";
+      margin-top: 2100px;
+      margin-left: 1400px;
+      width: 300px;
+      height: 40px;
+      text-align: center;
+      padding: 10px 5px 10px 5px;
+      transform: rotate( -90deg);
+      }
+      .triangle{
+        height: 0px;
+        width: 0px;
+        border-left: 55px solid white;
+        border-top:    30px solid transparent;
+        border-bottom: 30px solid transparent;
+        z-index: 4;
+        margin-top: 2210px;
+        margin-left: 1570px;
+        position: absolute;
+      }
+    }
+
+    .first_eye{
+      .first_part{
+        position: absolute;
+        z-index: 5;
+        margin-top: 2300px;
+        margin-left: 1570px;
+        img{
+          width: 250px;
+        }
+      }
+      .second_part{
+        position: absolute;
+        z-index: 5;
+        margin-top: 2330px;
+        margin-left: 1600px;
+        img{
+          width: 200px;
+        }
+      }
+      .animate_eye{
+        position: absolute;
+        z-index: 5;
+        margin-top: 2150px;
+        margin-left: 1610px;
+        img{
+          width: 90px;
+        }
+      }
+    }
+
+    .second_eye{
+      .first_part{
+        position: absolute;
+        z-index: 5;
+        img{}
+      }
+      .second_part{
+        position: absolute;
+        z-index: 5;
+        img{}
+      }
+      .animate_eye{
+        position: absolute;
+        z-index: 5;
+        img{}
+      }
+    }
+    .end_feol{
+      p{}
+    }
+  }
+}
