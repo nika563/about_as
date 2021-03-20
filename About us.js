@@ -26,7 +26,7 @@ function myFunction() {
   }
 }
 
-/*document.querySelectorAll('animate_eye').addEventListener('mousemove', eyes);
+document.querySelectorAll('animate_eye').addEventListener('mousemove', eyes);
   function eyes(){
     const eye = document.querySelectorAll('.eye');
     eye.forEach(function(eye){
@@ -37,4 +37,4 @@ function myFunction() {
       let rotation = (radian * (180 / Math.PI) * -1) + 270;
       eye.style.transform = "rotate("+rotation+"deg)"
     });
-  }*/
+  }
